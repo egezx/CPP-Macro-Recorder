@@ -24,7 +24,6 @@ private void SetMaterial (GameObject obj,bool allowBuilding)
 
 
 //Example from door placing into doorframe:
-
 private void DoorPlacer(string tagName)
 {
   RaycastHit rayHit;
