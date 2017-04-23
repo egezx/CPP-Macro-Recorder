@@ -29,7 +29,7 @@ void MouseLeftClick ()
 }
 
 
-//Insert/Allocate new position to macrosequence if there is space left.
+//Insert new position if there is space left.
 void InsertMacroPos(Macro* macro)
 {
 	if(macro->MacroIndex + 1 < MacroLength)
@@ -43,7 +43,7 @@ void InsertMacroPos(Macro* macro)
 }
 
 
-//Execute macrosequence.
+//Execute macro.
 void ExecuteMacro(Macro* macro)
 {
 	for (int i = 0; i < macro->MacroIndex + 1; i++)
@@ -55,7 +55,7 @@ void ExecuteMacro(Macro* macro)
 	}
 }
 
-//Initialzie new macro.
+//Initialize new macro.
 Macro CreateNewMacro(int sleepBeforeClick, int sleep)
 {
 	Macro macro;
